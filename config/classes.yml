@@ -1,0 +1,271 @@
+classes:
+  PoDoFo::PdfDocument: PdfDocument
+  PoDoFo::PdfMemDocument: PdfMemDocument
+  PoDoFo::PdfString: PdfString
+  # PoDoFo::PdfDocument: PdfDocument
+  # PoDoFo::PdfMemDocument: PdfMemDocument
+  # "PoDoFo::PdfString": Pdf::String
+  # "PoDoFo::PdfEncoding": Pdf::Encoding
+  # PdfElement: Element
+  # PoDoFo::PdfInputStream: InputStream
+  # PoDoFo::PdfFileInputStream: FileInputStream
+  # PdfFileInputStream: FileInputStream
+  # "PoDoFo::PdfDate": Date
+  # PdfDataType: PdfDataType
+  # "PoDoFo::PdfString": String
+  # PdfDate: PdfDate
+  # PdfRefCountedBuffer: PdfRefCountedBuffer
+  # PdfOutputStream: Pdf::OutputStream
+  # "PoDoFo::PdfReference": PdfReference
+  # "PoDoFo::PdfOutputDevice": PdfOutputDevice
+  # PdfRect: PdfRect
+  # "PoDoFo::PdfRect": PdfRect
+  # "PoDoFo::PdfDocument": PdfDocument
+  # PdfDocument: PdfDocument
+  # PdfMemDocument: PdfMemDocument
+  # PdfEncrpyt: PdfEncrypt
+  # "PoDoFo::PdfEncrpyt": PdfEncrypt
+  # PdfEncrpyts: PdfEncrypts
+  # PdfRect: PdfRect
+  # PdfArray: PdfArray
+  # PdfOutputDevice: PdfOutputDevice
+  # PdfRefCountedBuffer: PdfRefCountedBuffer
+  # PdfDataType: PdfDataType
+  # PdfStream: PdfStream
+  # PdfErrorInfo: PdfErrorInfo
+  # PdfError: PdfError
+  # "PdfError::LogMessageCallback": "PdfError::LogMessageCallback"
+  # PdfVariant: PdfVariant
+  # PdfDataType: PdfDataType
+  # PdfOject: PdfObject
+  # PdfDataType: PdfDataType
+  # MD5Context: MD5Context
+#   NamedColorComparatorPredicate: NamedColorComparatorPredicate
+#   "PoDoFo::PdfVecObjects::Observer": "PoDoFo::PdfVecObjects::Observer"
+  # PdfCanvas: PdfCanvas
+#   PdfCheckBox: PdfCheckBox
+#   PdfColor: PdfColor
+#   PdfDataType: PdfDataType
+#   PdfDate: PdfDate
+#   PdfDestination: PdfDestination
+#   PdfDocument: PdfDocument
+#   PdfElement: PdfElement
+#   PdfEncoding: PdfEncoding
+#   PdfEncodingDifference: PdfEncodingDifference
+#   PdfEncodingFactory: PdfEncodingFactory
+#   PdfEncodingObjectFactory: PdfEncodingObjectFactory
+#   PdfEncrypt: PdfEncrypt
+#   PdfEncryptAESBase: PdfEncryptAESBase
+#   PdfEncryptRC4: PdfEncryptRC4
+#   PdfEncryptRC4Base: PdfEncryptRC4Base
+#   PdfError: PdfError
+#   PdfExtension: PdfExtension
+#   PdfFilter: PdfFilter
+#   PdfFilterFactory: PdfFilterFactory
+#   PdfFontCache: PdfFontCache
+#   PdfFontConfigWrapper: PdfFontConfigWrapper
+#   PdfFontFactory: PdfFontFactory
+#   PdfFontMetrics: PdfFontMetrics
+#   PdfFontTTFSubset: PdfFontTTFSubset
+#   PdfInputDevice: PdfInputDevice
+#   PdfInputStream: PdfInputStream
+#   PdfListField: PdfListField
+#   "Util::PdfMutexImpl": "Util::PdfMutexImpl"
+#   "Util::PdfMutexWrapper": "Util::PdfMutexWrapper"
+#   PdfNamedColor: PdfNamedColor
+#   PdfObjectStreamParserObject: PdfObjectStreamParserObject
+  # PdfOutputDevice: PdfOutputDevice
+#   PdfOutputStream: PdfOutputStream
+#   PdfPagesTreeCache: PdfPagesTreeCache
+#   PdfPainter: PdfPainter
+#   PdfPredictorDecoder: PdfPredictorDecoder
+#   PdfPushButton: PdfPushButton
+#   PdfRect: PdfRect
+#   PdfRefCountedBuffer: PdfRefCountedBuffer
+#   PdfRefCountedInputDevice: PdfRefCountedInputDevice
+#   PdfSignatureField: PdfSignatureField
+#   PdfStream: PdfStream
+#   PdfTable: PdfTable
+#   PdfTableModel: PdfTableModel
+#   PdfTextField: PdfTextField
+#   PdfTokenizer: PdfTokenizer
+#   "NonPublic::PdfTTFWriter": "NonPublic::PdfTTFWriter"
+#   PdfType1Encrypt: PdfType1Encrypt
+#   PdfVariant: PdfVariant
+#   PdfVecObjects: PdfVecObjects
+#   PdfWriter: PdfWriter
+  # PdfXRef: PdfXRef
+#   "PdfVecObjects::StreamFactory": "PdfVecObjects::StreamFactory"
+#   TFontCacheElement: TFontCacheElement
+
+#   PdfImmediateWriter: PdfImmediateWriter
+
+#   # PdfPage: PdfPage
+#   # PdfXObject: PdfXObject
+#   PdfImage: PdfImage
+
+#   PdfArray: PdfArray
+#   PdfData: PdfData
+#   PdfDictionary: PdfDictionary
+#   PdfName: PdfName
+#   PdfReference: PdfReference
+#   PdfString: PdfString
+
+#   PdfMemDocument: PdfMemDocument
+#   PdfStreamedDocument: PdfStreamedDocument
+
+#   PdfAction: PdfAction
+#   PdfAnnotation: PdfAnnotation
+#   PdfContents: PdfContents
+#   # PdfDifferenceEncoding: PdfDifferenceEncoding
+#   PdfExtGState: PdfExtGState
+#   PdfFileSpec: PdfFileSpec
+#   PdfFont: PdfFont
+#   PdfFunction: PdfFunction
+#   PdfInfo: PdfInfo
+#   PdfOutlineItem: PdfOutlineItem
+#   PdfPage: PdfPage
+#   PdfPagesTree: PdfPagesTree
+#   PdfShadingPattern: PdfShadingPattern
+#   PdfTilingPattern: PdfTilingPattern
+#   PdfXObject: PdfXObject
+
+#   PdfDifferenceEncoding: PdfDifferenceEncoding
+#   PdfIdentityEncoding: PdfIdentityEncoding
+#   PdfSimpleEncoding: PdfSimpleEncoding
+
+#   PdfDocEncoding: PdfDocEncoding
+#   PdfMacRomanEncoding: PdfMacRomanEncoding
+#   PdfStandardEncoding: PdfStandardEncoding
+#   PdfSymbolEncoding: PdfSymbolEncoding
+#   PdfWinAnsiEncoding: PdfWinAnsiEncoding
+#   PdfZapfDingbatsEncoding: PdfZapfDingbatsEncoding
+
+#   PdfIso88592Encoding: PdfIso88592Encoding
+#   PdfWin1250Encoding: PdfWin1250Encoding
+
+#   PdfEncryptAESV2: PdfEncryptAESV2
+
+#   PdfAscii85Filter: PdfAscii85Filter
+#   PdfFlateFilter: PdfFlateFilter
+#   PdfHexFilter: PdfHexFilter
+#   PdfLZWFilter: PdfLZWFilter
+#   PdfRLEFilter: PdfRLEFilter
+
+#   PdfDeviceInputStream: PdfDeviceInputStream
+#   PdfFileInputStream: PdfFileInputStream
+#   PdfMemoryInputStream: PdfMemoryInputStream
+
+#   PdfComboBox: PdfComboBox
+#   PdfListBox: PdfListBox
+
+#   PdfSignOutputDevice: PdfSignOutputDevice
+
+#   PdfPainterMM: PdfPainterMM
+
+#   PdfFileStream: PdfFileStream
+#   PdfMemStream: PdfMemStream
+
+#   PdfSimpleTableModel: PdfSimpleTableModel
+
+#   PdfContentsTokenizer: PdfContentsTokenizer
+#   PdfParser: PdfParser
+#   # PdfParserObject: PdfParserObject
+#   # PdfXRefStreamParserObject: PdfXRefStreamParserObject
+
+  # PdfObject: PdfObject
+
+#   PdfParserObject: PdfParserObject
+
+#   PdfXRefStreamParserObject: PdfXRefStreamParserObject
+
+#   PdfXRefStream: PdfXRefStream
+
+
+
+#   PdfAxialShadingPattern: PdfAxialShadingPattern
+
+
+
+
+
+
+#   PdfBufferOutputStream: PdfBufferOutputStream
+
+
+
+
+
+
+
+
+
+#   PdfDeviceOutputStream: PdfDeviceOutputStream
+
+
+
+
+
+
+#   PdfExponentialFunction: PdfExponentialFunction
+
+
+#   PdfFileOutputStream: PdfFileOutputStream
+
+
+
+#   PdfFilteredDecodeStream: PdfFilteredDecodeStream
+#   PdfFilteredEncodeStream: PdfFilteredEncodeStream
+
+
+
+
+#   PdfFontCID: PdfFontCID
+#   PdfFontSimple: PdfFontSimple
+#   PdfFontTrueType: PdfFontTrueType
+#   PdfFontType1: PdfFontType1
+#   PdfFontType1Base14: PdfFontType1Base14
+#   PdfFontType3: PdfFontType3
+
+#   PdfFunctionBaseShadingPattern: PdfFunctionBaseShadingPattern
+
+
+
+
+
+
+
+
+
+
+
+
+#   PdfMemoryOutputStream: PdfMemoryOutputStream
+
+
+
+
+
+#   PdfOutlines: PdfOutlines
+
+
+
+
+
+#   PdfRadialShadingPattern: PdfRadialShadingPattern
+
+
+#   PdfSampledFunction: PdfSampledFunction
+
+
+
+
+
+#   PdfStitchingFunction: PdfStitchingFunction
+
+
+
+
+
+
+#   PdfTriangleShadingPattern: PdfTriangleShadingPattern

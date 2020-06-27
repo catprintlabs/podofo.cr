@@ -1,0 +1,32 @@
+enums:
+  "PoDoFo::EPdfContentsType": EPdfContentsType
+  "PoDoFo::EPdfVersion": EPdfVersion
+  "PoDoFo::EPdfWriteMode":  EPdfWriteMode
+  "PoDoFo::EPdfDataType": EPdfDataType
+  "PoDoFo::EPdfFilter": EPdfFilter
+  "PoDoFo::EPdfFontType": EPdfFontType
+  "PoDoFo::EPdfColorSpace": EPdfColorSpace
+  "PoDoFo::EPdfTextRenderingMode": EPdfTextRenderingMode
+  "PoDoFo::EPdfStrokeStyle": EPdfStrokeStyle
+  "PoDoFo::EPdfTilingPatternType": EPdfTilingPatternType
+  "PoDoFo::EPdfLineCapStyle": EPdfLineCapStyle
+  "PoDoFo::EPdfLineJoinStyle": EPdfLineJoinStyle
+  "PoDoFo::EPdfVerticalAlignment": EPdfVerticalAlignment
+  "PoDoFo::EPdfAlignment": EPdfAlignment
+  "PoDoFo::EPdfPageSize": EPdfPageSize
+  "PoDoFo::EPdfPageMode": EPdfPageMode
+  "PoDoFo::EPdfPageLayout": EPdfPageLayout
+  "PoDoFo::EPdfError": EPdfError
+  "PoDoFo::ELogSeverity": ELogSeverity
+  # EPdfAcroFormDefaulAppearance:  EPdfAcroFormDefaulAppearance
+  # EPdfAction:  EPdfAction
+  # EPdfAnnotation:  EPdfAnnotation
+  # EPdfAnnotationFlags:  EPdfAnnotationFlags
+  # EPdfDestinationType:  EPdfDestinationType
+  # EPdfField:  EPdfField
+  # EPdfHighlightingMode:  EPdfHighlightingMode
+  # EPdfFunctionType:  EPdfFunctionType
+  # EPdfOutlineFormat:  EPdfOutlineFormat
+  # "PoDoFo::EPdfKeyLength": EpdfKeyLength
+  # "PoDoFo::EPdfPermissions": EPdfPermissions
+  # "PoDoFo::EPdfEncryptAlgorithm": EPdfEncryptAlgorithm

@@ -1,0 +1,10 @@
+name: podofo
+version: 0.1.0
+crystal: 0.34.0
+
+description: PoDoFo bindings for Crystal
+
+dependencies:
+  bindgen:
+    github: Papierkorb/bindgen
+    version: 0.7.0

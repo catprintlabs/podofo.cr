@@ -1,0 +1,105 @@
+# Configuration template - Base your bindgen configuration on this!
+
+# A note on templates: Some values are "templated".  This means they're of type
+# `String`.  All occurences of the percent-sign ("%") will be replaced by a
+# computed value.
+# Additionally, templated strings allow access to environment variables  using
+# curly braces: `{CC}` would be expanded to the value of `ENV["CC"]`.  It's
+# possible to provide a fall back value, which is used only if the given
+# environment variable doesn't exist: `{CC|gcc}` would expand to `ENV["CC"]`,
+# or if it is not set, to `gcc`.  You can also put a percent-sign in there:
+# `{LIBRARY_PATH|%}` will expand to `ENV["LIBRARY_PATH"]`, or to the replacement
+# value otherwise.
+
+# Defines the `module X` into which *all* code will be put.
+#   Mandatory!
+module: Podofo
+
+# Defines how conversions in C/C++ shall happen.  Use `boehmgc-cpp` for C++,
+# or `boehmgc-c` for pure C.
+#
+# Don't worry too much about this setting at first.
+cookbook: boehmgc-cpp # Default!
+
+# Defines the `ld_flags` value for the `@[Link]` directive of the generated `lib`.
+# `%` will be replaced by the path to the base-directory of your project,
+# relative to the path of the generated `.cr` file.
+library: "%/ext/podofo_binding.a -lstdc++ -lpodofo"
+
+# Processors pipeline.  See `README.md` for details on each.
+# Defaults to the following:
+processors:
+  # Graph-refining processors:
+  - default_constructor # Create default constructors where possible
+  - function_class # Turn OOP-y C APIs into real classes
+  - inheritance # Mirror inheritance hierarchy from C++
+  - copy_structs # Copy structures as marked
+  - macros # Support for macro mapping
+  - functions # Add non-class functions
+  - filter_methods # Throw out filtered methods
+  - extern_c # Directly bind to pure C functions
+  - auto_container_instantiation
+  - instantiate_containers # Actually instantiate containers
+  - enums # Add enums
+  # Preliminary generation processors:
+  - crystal_wrapper # Create Crystal wrappers
+  - virtual_override # Allow overriding C++ virtual methods
+  - cpp_wrapper # Create C++ <-> C wrappers
+  - crystal_binding # Create `lib` bindings for the C wrapper
+  # - sanity_check # Shows issues, if any
+
+generators:
+  cpp:
+    output: ext/podofo_binding.cpp
+    preamble: |-
+      #include "bindgen_helper.hpp"
+    # build: make
+  crystal:
+    output: src/podofo/binding.cr
+
+find_paths:
+  PODOFO_INCLUDE_DIR:
+    try:
+      - "#{PODOFODIR}/include"
+      - "/usr/include/podofo"
+      - "/usr/include"
+      - "/usr/local/include/podofo"
+      - "/usr/local/include"
+    checks:
+      - path: podofo
+        kind: Directory
+  PODOFO_LIBS_DIR:
+    try:
+      - "#{PODOFODIR}/lib"
+      - "/usr/lib"
+      - "/usr/local/lib"
+    checks:
+      - path: libpodofo.so
+
+<<: config/classes.yml
+<<: config/enums.yml
+
+# functions:
+
+types:
+  PoDoFo::PdfString:
+    crystal_type: PdfString
+    cpp_type: PoDoFo::PdfString
+    binding_type: PoDoFoPdfString
+  wchar_t:
+    binding_type: Char
+  PoDoFo::pdf_long:
+    binding_type: Int64
+  PoDoFo::pdf_utf8:
+    binding_type: Char
+  PoDoFo::pdf_utf16be:
+    binding_type: Char
+
+
+
+parser:
+  files:
+    - podofo/podofo.h
+  includes:
+    - "#{PODOFO_INCLUDE_DIR}/"
+  flags: [ "-x", "c++", "-std=c++11" ]
